@@ -1,0 +1,39 @@
+{
+    "name": "portalcurso/php-alert",
+    "description": "Biblioteca de alertas e modais em PHP + JavaScript, no estilo SweetAlert (Swal.fire), sem dependências.",
+    "type": "library",
+    "keywords": ["alert", "modal", "sweetalert", "swal", "toast", "notification", "dialog", "flash"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Portal Curso Desenvolvimento"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "PortalCurso\\Alert\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PortalCurso\\Alert\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "7.4.33"
+        }
+    },
+    "minimum-stability": "stable"
+}
